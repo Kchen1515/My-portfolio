@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar sticky dark:bg-black">
+    <nav className="w-full flex py-6 justify-between items-center navbar sticky ">
       <img src={logo} alt="kyc-logo" className="w-[124px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <button class="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border border-blue-800 hover:border-transparent rounded font-poppins ">
+        <button class="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border-2 border-blue-800 hover:border-transparent rounded font-poppins ">
           Resume
         </button>
       </ul>

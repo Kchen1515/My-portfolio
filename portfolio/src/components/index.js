@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-// import Billing from "./Billing";
+import About from "./About";
 // import CardDeal from "./CardDeal";
 // import Business from "./Business";
 // import Clients from "./Clients";
@@ -13,6 +13,7 @@ import Switcher from "./Switcher";
 export {
   Navbar,
   Switcher,
+  About,
   // Billing,
   // CardDeal,
   // Business,
