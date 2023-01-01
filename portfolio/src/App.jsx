@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles'
-import { Navbar, Hero, Switcher, About } from "./components";
+import { Navbar, Hero, Switcher, About, Skills } from "./components";
 
 
 const App = () => {
@@ -19,9 +19,10 @@ const App = () => {
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} flex justify-center`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} mb-10`}>
+        <div className={`${styles.boxWidth} flex flex-col justify-center `}>
           <About/>
+          <Skills/>
         </div>
       </div>
 

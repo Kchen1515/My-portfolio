@@ -13,7 +13,7 @@ const Hero = () => {
 
   })
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mb-20`}>
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} mb-10`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
@@ -33,7 +33,7 @@ const Hero = () => {
           </p>
 
           <div className="sm:hidden md:mr-4 mr-0 mt-8">
-            <button class="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border border-blue-800 hover:border-transparent rounded font-poppins ">
+            <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border border-blue-800 hover:border-transparent rounded font-poppins ">
             Resume
             </button>
           </div>

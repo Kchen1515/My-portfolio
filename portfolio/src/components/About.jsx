@@ -5,9 +5,9 @@ import me from "../assets/me.png"
 
 const About = () => {
   return (
-    <section id="about" className={`${styles.flexCenter} flex-col w-full `}>
+    <section id="about" className={`${styles.flexCenter} flex-col w-full mb-20`}>
       <div className="mb-10">
-        <h3 className="font-semibold text-3xl font-poppins">About Me</h3>
+        <h3 className="font-semibold text-3xl">About Me</h3>
       </div>
 
       <div className={`${styles.flexCenter} flex-col gap-10 sm:flex-row sm:w-3/4 `}>
@@ -15,7 +15,7 @@ const About = () => {
           <img src={me} alt="picture of Kong" className="rounded-lg object-cover w-60 sm:w-max"/>
         </div>
         <div>
-          <p>
+          <p className="leading-relaxed">
             As a fullstack engineer with a strong focus on front end development, I am constantly seeking out new and innovative ways to create seamless and intuitive user experiences.
             With a solid foundation in both back end technologies and front end design principles, I am well-equipped to tackle any project that comes my way.
             I have a passion for building clean and efficient code, and I am always looking for ways to improve my skills and stay up-to-date with the latest trends in the industry.

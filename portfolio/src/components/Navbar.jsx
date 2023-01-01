@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <button class="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border-2 border-blue-800 hover:border-transparent rounded font-poppins ">
+        <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border-2 border-blue-800 hover:border-transparent rounded font-poppins ">
           Resume
         </button>
       </ul>
