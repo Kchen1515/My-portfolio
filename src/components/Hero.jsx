@@ -6,7 +6,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
   const [text, count] = useTypewriter({
-    words: ['<Software Engineer/>', '<Front-End Developer/>'],
+    words: ['< a Software Engineer/>', '< a Front-End Developer/>', '<passionate about web-design/>'],
     loop: true,
     delaySpeed: 2000,
 
@@ -28,7 +28,7 @@ const Hero = () => {
             Hello, my name is <br className="sm:block hidden" />{" "}</span>
           <span className="text-blue-800 flex-1  font-poppins font-semibold text-center text-[72px] text-black ss:leading-[100.8px] leading-[75px]">Kong Yu Chen</span>{" "}
           <p className="text-[30px] font-poppins font-semibold text-center">
-            <span >I am a <span className="text-blue-800">{text}</span></span>
+            <span >I am <span className="text-blue-800">{text}</span></span>
             <Cursor cursorColor="#1E40AF"/>
           </p>
 
