@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './styles'
-import { Navbar, Hero, Switcher, About, Skills } from "./components";
+import { Navbar, Hero, Switcher, About, Skills, Projects } from "./components";
 
 
 const App = () => {
   return (
-    <div className="bg-white w-full overflow-hidden">
-      <Switcher />
-      <div className={`${styles.paddingX} ${styles.flexCenter} dark:bg-slate-500 `}>
+    <div className="w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter} dark:bg-red-500`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar/>
         </div>
@@ -23,6 +22,7 @@ const App = () => {
         <div className={`${styles.boxWidth} flex flex-col justify-center `}>
           <About/>
           <Skills/>
+          <Projects/>
         </div>
       </div>
 

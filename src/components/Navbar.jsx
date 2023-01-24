@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import { close, menu } from "../assets";
 import logo  from '../assets/logo.png'
 import { navLinks } from "../constants";
 import Hamburger from 'hamburger-react'
@@ -12,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar sticky ">
+    <nav className="w-full flex py-6 justify-between items-center">
       <img src={logo} alt="kyc-logo" className="w-[124px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
