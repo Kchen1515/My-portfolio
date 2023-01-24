@@ -3,7 +3,6 @@ import { useState } from "react";
 import logo  from '../assets/logo.png'
 import { navLinks } from "../constants";
 import Hamburger from 'hamburger-react'
-import Switcher from './Switcher'
 
 
 const Navbar = () => {
