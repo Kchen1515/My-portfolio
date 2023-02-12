@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section id="skills" className={`${styles.flexCenter} flex-col w-full `}>
       <div className="mb-5">
-        <h3 className="font-semibold text-4xl text-gray-500 tracking-widest border-b-4 border-blue-800">SKILLS</h3>
+        <h3 className="font-semibold text-4xl text-gray-500 tracking-widest">SKILLS</h3>
       </div>
       <div class="relative flex overflow-x-hidden w-3/4">
         <div class="py-8 animate-marquee whitespace-nowrap">

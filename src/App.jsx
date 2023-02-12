@@ -5,14 +5,16 @@ import { Navbar, Hero, About, Skills, Projects } from "./components";
 
 const App = () => {
   return (
-    <div className="w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar/>
-        </div>
+    <div className="w-full overflow-hidden flex items-center justify-center">
+      <div className="w-[90%]">
+        <Navbar/>
       </div>
 
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className="">
+
+      </div>
+
+      {/* <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero/>
         </div>
@@ -24,7 +26,7 @@ const App = () => {
           <Skills/>
           <Projects/>
         </div>
-      </div>
+      </div> */}
 
 
 

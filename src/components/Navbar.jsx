@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo  from '../assets/logo.png'
 import { navLinks } from "../constants";
 import Hamburger from 'hamburger-react'
+import '../../styles/navbar.css'
 
 
 const Navbar = () => {
@@ -10,41 +11,42 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center">
-      <img src={logo} alt="kyc-logo" className="w-[124px]" />
-
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+    <nav className="w-full flex justify-between items-center py-6">
+      <img src={logo} alt="kyc-logo" className="w-[150px]" />
+      <ul className="hidden sm:flex justify-center items-center ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-blue-800" : "text-black"
-            } mr-8`}
+              active === nav.title ? "text-gray-500" : "text-black"
+            } mr-8 font-bold hover:text-gray-500 text-[1.15rem]`}
             onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <button className="bg-transparent hover:bg-blue-800 text-blue-800 font-semibold hover:text-white py-2 px-4 border-2 border-blue-800 hover:border-transparent rounded font-poppins ">
-          Resume
+        <button className="bg-transparent hover:bg-gray-500 text-black font-semibold hover:text-white py-2 px-4 border-2 border-black hover:border-black rounded font-poppins ">
+          <a href="src/assets/Kong Yu Chen Resume.pdf" download>Resume</a>
         </button>
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <Hamburger toggled={toggle} toggle={setToggle} color="black" />
+      <div className="sm:hidden flex flex-1 justify-end items-center z-10">
+        <div className={`z-10`}>
+          <Hamburger toggled={toggle} toggle={setToggle} color={toggle ? "white" : "black"}/>
+        </div>
         <div
-          className={`${
-            !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          className={` flex p-6 bg-black-gradient absolute w-[50%] right-[-50%] top-0 min-w-[140px] h-full transition-transform duration-700 sidebar bg-gray-500 ${toggle ? 'transform translate-x-[-100%]' : null}`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+          <ul className="list-none flex justify-center items-center flex-1 flex-col gap-5">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                className={`font-poppins font-medium cursor-pointer text-[1.5rem] ${
+                  active === nav.title ? "text-white" : "text-black"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={(e) => {
+                  setActive(nav.title)
+                }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
