@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex justify-between items-center py-6 overflow-x-hidden">
-      <img src={logo} alt="kyc-logo" className="w-[150px]" />
+      <img src={logo} alt="kyc-logo" className="w-[125px]" />
       <ul className="hidden sm:flex justify-center items-center ">
         {navLinks.map((nav, index) => (
           <li
