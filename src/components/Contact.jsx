@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10">
+    <section className="flex flex-col items-center justify-center gap-10 w-[100%]">
       <div>
         <h2>Contact</h2>
       </div>

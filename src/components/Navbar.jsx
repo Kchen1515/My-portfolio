@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center py-6">
+    <nav className="w-full flex justify-between items-center py-6 overflow-x-hidden">
       <img src={logo} alt="kyc-logo" className="w-[150px]" />
       <ul className="hidden sm:flex justify-center items-center ">
         {navLinks.map((nav, index) => (
@@ -30,7 +30,7 @@ const Navbar = () => {
         </button>
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center z-10">
+      <div className="sm:hidden flex flex-1 justify-end items-center z-10 overflow-hidden">
         <div className={`z-10`}>
           <Hamburger toggled={toggle} toggle={setToggle} color={toggle ? "white" : "black"}/>
         </div>

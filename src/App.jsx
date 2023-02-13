@@ -10,7 +10,7 @@ const App = () => {
         <Navbar/>
       </div>
 
-      <div className="w-[70%]">
+      <div className="w-[80%] border-2 border-red-600">
         <Contact/>
       </div>
 
