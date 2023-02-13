@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-        <button className="bg-transparent hover:bg-gray-500 text-black font-semibold hover:text-white py-2 px-4 border-2 border-black hover:border-black rounded font-poppins ">
+        <button className=" font-bold bg-transparent hover:bg-gray-500 text-black hover:text-white py-2 px-4 border-2 border-black hover:border-black rounded font-poppins ">
           <a href="src/assets/Kong Yu Chen Resume.pdf" download>Resume</a>
         </button>
       </ul>

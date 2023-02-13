@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './styles'
-import { Navbar, Hero, About, Skills, Projects } from "./components";
+import { Navbar, Hero, About, Skills, Projects, Contact } from "./components";
 
 
 const App = () => {
   return (
-    <div className="w-full overflow-hidden flex items-center justify-center">
+    <div className="w-full overflow-hidden flex flex-col items-center justify-center">
       <div className="w-[90%]">
         <Navbar/>
       </div>
 
-      <div className="">
-
+      <div className="w-[70%]">
+        <Contact/>
       </div>
 
       {/* <div className={`bg-primary ${styles.flexStart}`}>
