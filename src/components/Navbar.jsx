@@ -35,7 +35,7 @@ const Navbar = () => {
           <Hamburger toggled={toggle} toggle={setToggle} color={toggle ? "white" : "black"}/>
         </div>
         <div
-          className={` flex p-6 bg-black-gradient absolute w-[50%] right-[-50%] top-0 min-w-[140px] h-full transition-transform duration-700 sidebar bg-gray-500 ${toggle ? 'transform translate-x-[-100%]' : null}`}
+          className={` flex p-6 bg-black-gradient absolute w-[50%] right-[-50%] top-0 min-w-[140px] h-full transition-transform duration-700 sidebar bg-gray-500 ${toggle ? 'transform translate-x-[-100%]' : null} backdrop-blur-sm`}
         >
           <ul className="list-none flex justify-center items-center flex-1 flex-col gap-5">
             {navLinks.map((nav, index) => (

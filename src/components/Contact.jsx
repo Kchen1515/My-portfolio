@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-10 ">
       <div>
-        <h2>Contact</h2>
+        <h2 className="">CONTACT</h2>
       </div>
 
       <div>

@@ -11,6 +11,8 @@ const App = () => {
       </div>
 
       <div className="w-[80%] p-2">
+        <Hero/>
+        {/* <About/> */}
         <Contact/>
       </div>
 
