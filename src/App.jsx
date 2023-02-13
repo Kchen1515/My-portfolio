@@ -5,12 +5,12 @@ import { Navbar, Hero, About, Skills, Projects, Contact } from "./components";
 
 const App = () => {
   return (
-    <div className="w-full overflow-hidden flex flex-col items-center justify-center">
+    <div className="w-[100vw] overflow-hidden flex flex-col items-center justify-center">
       <div className="w-[90%]">
         <Navbar/>
       </div>
 
-      <div className="w-[80%] border-2 border-red-600">
+      <div className="w-[80%] p-2">
         <Contact/>
       </div>
 

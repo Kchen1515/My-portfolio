@@ -7,8 +7,8 @@
 * {
   scroll-behavior: smooth;
 }
-body{
-  overflow-x: hidden;
+html,body{
+  overflow: hidden;
 }
 img{
   display: inline-block;
