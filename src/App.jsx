@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles'
-import { Navbar, Hero, About, Skills, Projects, Contact } from "./components";
+import { Navbar, Hero, About, Skills, Projects, Contact, Slider } from "./components";
 
 
 const App = () => {
@@ -10,38 +10,12 @@ const App = () => {
         <Navbar/>
       </div>
 
-      <div className="w-[80%] p-2">
+      <div className="w-[80%] p-2 flex flex-col items-center">
         <Hero/>
         {/* <About/> */}
+        <Skills/>
         <Contact/>
       </div>
-
-      {/* <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero/>
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter} mb-10`}>
-        <div className={`${styles.boxWidth} flex flex-col justify-center `}>
-          <About/>
-          <Skills/>
-          <Projects/>
-        </div>
-      </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   )
 }
