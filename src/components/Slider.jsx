@@ -1,5 +1,5 @@
 import React from 'react'
-import Marquee from "react-fast-Marquee"
+import Marquee from "react-fast-marquee"
 import { skills } from "../constants";
 
 
