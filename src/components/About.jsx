@@ -16,12 +16,7 @@ const About = () => {
         </div>
         <div>
           <p className="leading-relaxed">
-            As a fullstack engineer with a strong focus on front end development, I am constantly seeking out new and innovative ways to create seamless and intuitive user experiences.
-            With a solid foundation in both back end technologies and front end design principles, I am well-equipped to tackle any project that comes my way.
-            I have a passion for building clean and efficient code, and I am always looking for ways to improve my skills and stay up-to-date with the latest trends in the industry.
-            I am a strong believer in the power of collaboration, and I thrive in team environments where I can work with others to solve complex problems and bring new ideas to life.
-            Whether I am working on a large-scale web application or a simple landing page, I am committed to delivering high-quality solutions that meet the needs of my clients and users.
-            I am excited to continue my journey as a fullstack engineer, and I am always open to new opportunities to learn, grow, and make a positive impact in the world of front end development.
+          As a frontend developer, I am passionate about creating beautiful and intuitive user experiences that leave a lasting impression. With a keen eye for design and a solid foundation in coding, I enjoy bringing ideas to life and pushing the boundaries of what is possible on the web. From crafting responsive layouts to implementing complex animations, I take pride in every aspect of my work and strive to exceed expectations with each project. With a commitment to excellence and a constant desire to learn and grow, I am excited to tackle new challenges and help bring your vision to life.
           </p>
         </div>
 

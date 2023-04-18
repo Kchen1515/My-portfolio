@@ -12,7 +12,7 @@ const App = () => {
 
       <div className="w-[80%] p-2 flex flex-col items-center">
         <Hero/>
-        {/* <About/> */}
+        <About/>
         <Skills/>
         <Contact/>
       </div>
